@@ -1,0 +1,120 @@
+body {
+    
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #aaa;
+    height: 70px;
+}
+
+/* Iconos de redes sociales */
+.contacto-iconos {
+    display: flex;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    border-radius: 50%;
+    outline: 2px solid #000;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .25s;
+}
+
+.icon:hover {
+    outline-offset: 5px;
+    outline-color: #2596be;
+    background-color: #2596be;
+}
+.icon:hover i {
+    animation: shake .25s;
+}
+
+@keyframes shake {
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+    
+}
+
+/* Busqueda en barra superior */
+
+.contacto_busqueda-form {
+    display: flex;
+    gap: 0 1px;
+}
+
+.busqueda-primaria {
+    margin: 0px;
+    height: 100%;
+    width: 50%;
+    border-radius: 50px 0px 0px 50px;
+    background-color: #ddd;
+    border: none;
+    border-right: 0.5px solid #bbb;
+    outline: none;
+    text-align: end;
+    font-size: 1.5rem;
+    outline: 1px solid #000;
+
+}
+
+.busqueda-secundaria {
+    margin-left: 0px;
+    height: 100%;
+    width: 50%;
+    border-radius: 0 50px 50px 0;
+    background-color: #ddd;
+    border: none;
+    border-left: 0.5px solid #bbb;
+    outline: none;
+    font-size: 1.5rem;
+    outline: 1px solid #000;
+
+}
+
+.busqueda-primaria:hover  {
+    outline-offset: 1.5px;
+    outline: 2px solid #2596be;
+    border-right: 0.5px solid #2596be;
+    z-index: 1;
+    
+}
+
+
+.busqueda-secundaria:hover {
+    outline-offset: 1.5px;
+    outline: 2px solid #2596be;
+    border-left: 0.5px solid #2596be;
+    z-index: 1;
+}
+
+.contacto_busqueda-boton {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: #aaa;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    -moz-appearance:inherit; 
+    -o-appearance:inherit;
+    -ms-appearance:inherit;
+    appearance:inherit;
+    -webkit-appearance:inherit;
+}
+
+.contacto_busqueda-boton:hover {
+    transform: scale(1.1);
+}
+
