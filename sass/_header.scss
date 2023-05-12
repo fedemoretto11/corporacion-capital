@@ -1,0 +1,136 @@
+.topbar {
+  width: 100%;
+  height: 85px;
+  padding: 10px;
+  background-color: $colorSecundario;
+  justify-content: space-between;
+}
+
+.topbar-left {
+  border-right: 2px solid $colorPrimario;
+  padding: 15px;
+  h4 {
+    color: $colorBlanco;
+    font-size: 32px;
+    font-family: $fuentePrimaria;
+  }
+}
+
+.topbar-right{
+  margin-right: 60px;
+}
+.topbar-nav_ul {
+  gap: 15px;
+  margin-right: 30px;
+  border-left: 2px solid $colorPrimario;
+  padding: 15px;
+  height: calc(67px - 30px);
+  li {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $colorBlanco;
+    font-family: $fuentePrimaria;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+      color: $colorAcento;
+    }
+  }
+}
+
+
+// Burguer Menu
+
+#burguer-menu {
+  flex-direction: column;
+  gap: 6.5px;
+  cursor: pointer;
+  height: 130px;
+  &:hover div {
+    background-color: $colorAcento;
+  }
+  div {
+    width: 40px;
+    height: 3px;
+    background-color: $colorPrimario;
+    transition: .7s;
+    
+  }
+}
+
+.line1-active {
+  transform: rotate(45deg) translate(6.5px, 6.5px);
+}
+.line2-active {
+  opacity: 0;
+}
+.line3-active {
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
+}
+
+
+
+
+// SideBar
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: $colorMenuDesplegable;
+  position: fixed;
+  right: -10000px;
+  // right: 0px;
+  z-index: 100;
+  transition: all ease-in-out .5s;
+  justify-content: flex-end;
+  align-items: flex-start;
+  
+  
+}
+
+.sidebar-nav {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar-nav_ul {
+  flex-direction: column;
+  margin-right: 20px;
+  margin-top: 30px;
+  gap: 15px;
+  li {
+    color: $colorBlanco;
+    font-family: $fuentePrimaria;
+    font-size: 28px;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+      color: $colorAcento;
+    }
+  }
+
+}
+
+.sidebar-nav_ul-2 {
+  margin-top: 16px;
+  flex-direction: column;
+  // margin-right: px;
+  gap: 15px;
+  li {
+    color: $colorBlanco;
+    font-family: $fuentePrimaria;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+      color: $colorAcento;
+    }
+  }
+}
+
+
+
+
+
+
+
