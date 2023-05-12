@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#separador {
+  height: 0.5px;
+  width: 140px;
+  background-color: #56C7F4;
+  border: 0.5px solid #56C7F4;
+  margin-right: 20px;
+}
+
+.topbar {
+  width: 100%;
+  height: 85px;
+  padding: 10px;
+  background-color: #2F4F6F;
+  justify-content: space-between;
+}
+
+.topbar-left {
+  border-right: 2px solid #56C7F4;
+  padding: 15px;
+}
+.topbar-left h4 {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+}
+
+.topbar-right {
+  margin-right: 60px;
+}
+
+.topbar-nav_ul {
+  gap: 15px;
+  margin-right: 30px;
+  border-left: 2px solid #56C7F4;
+  padding: 15px;
+  height: 37px;
+}
+.topbar-nav_ul li {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.topbar-nav_ul li:hover {
+  color: #FF8000;
+}
+
+#burguer-menu {
+  flex-direction: column;
+  gap: 6.5px;
+  cursor: pointer;
+  height: 130px;
+}
+#burguer-menu:hover div {
+  background-color: #FF8000;
+}
+#burguer-menu div {
+  width: 40px;
+  height: 3px;
+  background-color: #56C7F4;
+  transition: 0.7s;
+}
+
+.line1-active {
+  transform: rotate(45deg) translate(6.5px, 6.5px);
+}
+
+.line2-active {
+  opacity: 0;
+}
+
+.line3-active {
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(47, 79, 111, 0.4666666667);
+  position: fixed;
+  right: -10000px;
+  z-index: 100;
+  transition: all ease-in-out 0.5s;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.sidebar-nav {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar-nav_ul {
+  flex-direction: column;
+  margin-right: 20px;
+  margin-top: 30px;
+  gap: 15px;
+}
+.sidebar-nav_ul li {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sidebar-nav_ul li:hover {
+  color: #FF8000;
+}
+
+.sidebar-nav_ul-2 {
+  margin-top: 16px;
+  flex-direction: column;
+  gap: 15px;
+}
+.sidebar-nav_ul-2 li {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sidebar-nav_ul-2 li:hover {
+  color: #FF8000;
+}
+
+.hero {
+  width: 100vw;
+  height: calc(100vh - 105px);
+  background-image: url("../img/laptop.jpg");
+  background-size: cover;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #56C7F4;
+}/*# sourceMappingURL=style.css.map */
