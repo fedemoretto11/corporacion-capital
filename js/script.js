@@ -14,7 +14,7 @@ function desplegarMenu() {
 }
 
 function esconderMenu() {
-  menuDesplegable.style.right = "-10000px";
+  menuDesplegable.style.right = "-1000px";
   document.querySelector(".line1").classList.remove("line1-active");
   document.querySelector(".line2").classList.remove("line2-active");
   document.querySelector(".line3").classList.remove("line3-active");
@@ -25,7 +25,7 @@ function esconderMenu() {
 
 
 burguerMenu.addEventListener("click", (e) => {
-  if (menuDesplegable.style.right == "-10000px") {
+  if (menuDesplegable.style.right == "-1000px") {
     desplegarMenu();
   } else {
     esconderMenu();
