@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 * {
   margin: 0;
   padding: 0;
@@ -150,6 +151,19 @@
   background-image: url("../img/ciudad.jpg");
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.hero i {
+  font-size: 58px;
+  font-weight: bold;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero i:hover {
+  text-shadow: 0 0 25px #FF8000;
 }
 
 @media screen and (max-width: 1024px) {
@@ -189,6 +203,9 @@
   .sidebar-nav_ul-2 li {
     width: 100%;
     text-align: center;
+  }
+  .hero i {
+    font-size: 38px;
   }
 }
 body {
