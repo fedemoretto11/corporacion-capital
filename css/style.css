@@ -147,8 +147,9 @@
 .hero {
   width: 100vw;
   height: calc(100vh - 105px);
-  background-image: url("../img/laptop.jpg");
+  background-image: url("../img/ciudad.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 @media screen and (max-width: 1024px) {
