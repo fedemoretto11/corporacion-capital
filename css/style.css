@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
 * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .center {
@@ -26,6 +27,7 @@
   padding: 10px;
   background-color: #2F4F6F;
   justify-content: space-between;
+  box-sizing: content-box;
 }
 
 .topbar-left {
@@ -46,8 +48,10 @@
 }
 
 .topbar-nav_ul {
+  box-sizing: content-box;
   gap: 15px;
   margin-right: 30px;
+  margin-bottom: 0;
   border-left: 2px solid #56C7F4;
   padding: 15px;
   height: 37px;
@@ -148,7 +152,7 @@
 .hero {
   width: 100vw;
   height: calc(100vh - 105px);
-  background-image: url("../img/ciudad.jpg");
+  background-image: url("../img/ciudad.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -164,6 +168,91 @@
 }
 .hero i:hover {
   text-shadow: 0 0 25px #FF8000;
+}
+
+.quienes-somos_texto-superior {
+  width: 100vw;
+  min-height: 180px;
+  padding: 30px 0;
+  background-color: #2F4F6F;
+  flex-direction: column;
+  gap: 32px;
+}
+.quienes-somos_texto-superior h3 {
+  width: 70%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 42px;
+  font-family: "Raleway", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.quienes-somos_texto-superior p {
+  width: 60%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  line-height: 25px;
+}
+
+.info {
+  min-height: calc(100vh - 262px);
+  margin: 0;
+  padding: 0;
+}
+.info div {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.info-text {
+  flex-direction: column;
+  gap: 9px;
+}
+.info-text h3 {
+  line-height: normal;
+}
+.info-text p {
+  padding: 16px;
+}
+
+.info-img {
+  height: 100%;
+}
+.info-img img {
+  height: 100%;
+  max-height: 455px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h5 {
+  color: #FFFFFF;
+  line-height: normal;
+}
+
+.footer {
+  background-color: #56C7F4;
+  text-align: center;
+}
+
+.footer-redes_redes a {
+  padding: 6px;
+  text-decoration: none;
+}
+.footer-redes_redes a:hover i {
+  color: #FF8000;
+}
+.footer-redes_redes a i {
+  transition: 0.2s;
+  color: #2F4F6F;
+  font-size: 32px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -207,9 +296,4 @@
   .hero i {
     font-size: 38px;
   }
-}
-body {
-  width: 100vw;
-  height: 100vh;
-  background-color: #56C7F4;
 }/*# sourceMappingURL=style.css.map */

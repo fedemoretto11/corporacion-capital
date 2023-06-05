@@ -27,7 +27,9 @@ function esconderMenu() {
 burguerMenu.addEventListener("click", (e) => {
   if (menuDesplegable.style.right == "-1000px") {
     desplegarMenu();
+    console.log("Menu desplegado");
   } else {
     esconderMenu();
+    console.log("Menu oculto");
   }
 })
