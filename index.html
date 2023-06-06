@@ -23,9 +23,9 @@
     <div class="topbar-right center">
       <nav class="topbar-nav">
         <ul class="topbar-nav_ul center">
-          <li>Quienes Somos</li>
-          <li>Porque Nosotros</li>
-          <li>Que Hacemos</li>
+          <a href="#quienes-somos"><li>Quienes Somos</li></a>
+          <a href="#porque-nosotros"><li>Porque Nosotros</li></a>
+          <a href="#nuestros-servicios"><li>Que Hacemos</li></a>
         </ul>
       </nav>
       <div id="burguer-menu" class="center">
@@ -47,9 +47,9 @@
       </ul>
       <hr id="separador">
       <ul class="sidebar-nav_ul-2 center">
-        <li>Quienes Somos</li>
-        <li>Porque Nosotros</li>
-        <li>Que Hacemos</li>
+        <a href="#quienes-somos"><li>Quienes Somos</li></a>
+        <a href="#porque-nosotros"><li>Porque Nosotros</li></a>
+        <a href="#nuestros-servicios"><li>Que Hacemos</li></a>
       </ul>
     </nav>
   </div>
@@ -63,21 +63,50 @@
 
   
   <section id="acerca-de" class="container-fluid">
-    <div class="quienes-somos row">
+    <div id="quienes-somos" class="quienes-somos row">
       <div class="quienes-somos_texto-superior center">
         <h3>Quienes somos</h3>
         <p>Somos un equipo de profesionales en <b>recursos humanos</b>, comercialización y negocios. Con experiencia en consultoría y organizaciones. <br> Nuestra pasión y compromiso nos distinguen, y nos esforzamos por ofrecer soluciones personalizadas y orientadas a resultados para ayudar a nuestros clientes a alcanzar el éxito organizacional.</p>
       </div> 
     </div>
 
-    <div class="row center info">
-      <div class="col-md-6 center info-text">
-        <h3>hola</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi iure soluta ut magnam voluptatum accusantium voluptatibus dicta tempora rem dolorum? Neque, voluptatibus nesciunt sequi velit perspiciatis praesentium repellendus voluptas voluptatem!</p>
+    <div id="porque-nosotros" class="porque-nosotros row center">
+
+      <div class="col-md-6 center porque-nosotros_texto">
+        <h3>Porque Nosotros</h3>
+        <ul>
+          <li><i class="bi bi-caret-right-fill"></i>Amplia red de talentos</li>
+          <li><i class="bi bi-caret-right-fill"></i>Riguroso proceso de selección</li>
+          <li><i class="bi bi-caret-right-fill"></i>Enfoque personalizado</li>
+          <li><i class="bi bi-caret-right-fill"></i>Resultados comprobados</li>
+          <li><i class="bi bi-caret-right-fill"></i>Valores y ética</li>
+        </ul>
       </div>
-      <div class="col-md-6 info-img">
+
+      <div class="col-md-6 porque-nosotros_img">
+        <img src="img/mundo-conectado.jpg" alt="">
+      </div>
+
+    </div>
+
+    <!-- Tiene la clase porque nosotros pero es servicios -->
+    <div id="nuestros-servicios" class="porque-nosotros row center">
+      <div class="col-md-6 porque-nosotros_img">
         <img src="img/laptop.jpg" alt="">
       </div>
+
+      <div class="col-md-6 center porque-nosotros_texto">
+        <h3>Nuestros Servicios</h3>
+        <ul>
+          <li><i class="bi bi-caret-right-fill"></i>Búsqueda y difusión</li>
+          <li><i class="bi bi-caret-right-fill"></i>Sourcing</li>
+          <li><i class="bi bi-caret-right-fill"></i>Reclutamiento</li>
+          <li><i class="bi bi-caret-right-fill"></i>HeadHunting</li>
+          <!-- <li><i class="bi bi-caret-right-fill"></i>Valores y ética</li> -->
+        </ul>
+      </div>
+
+
     </div>
     
   </section>
