@@ -5,6 +5,7 @@
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  line-height: normal !important;
 }
 
 .center {
@@ -232,27 +233,85 @@
      object-fit: cover;
 }
 
-h5 {
-  color: #FFFFFF;
-  line-height: normal;
+footer {
+  background-color: #56C7F4;
+  box-sizing: content-box;
 }
 
 .footer {
-  background-color: #56C7F4;
-  text-align: center;
+  box-sizing: content-box;
+  width: 100vw;
+  min-height: 200px;
 }
 
-.footer-redes_redes a {
-  padding: 6px;
-  text-decoration: none;
+.footer-logo {
+  margin: 8px;
+  box-sizing: content-box;
+  width: 150px;
+  height: 150px;
 }
-.footer-redes_redes a:hover i {
+.footer-logo img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer-contacto {
+  margin: 8px;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  gap: 22px;
+  font-size: 18px;
+}
+.footer-contacto h5 {
+  font-size: 28px;
+  color: #2F4F6F;
+}
+.footer-contacto div {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}
+.footer-contacto div i {
+  color: #FF8000;
+  margin-right: 6px;
+}
+
+.footer-redes {
+  margin: 8px;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  gap: 22px;
+}
+.footer-redes h5 {
+  font-size: 28px;
+  color: #2F4F6F;
+}
+.footer-redes div {
+  height: auto;
+  gap: 21px;
+}
+.footer-redes div a {
+  font-size: 28px;
+  text-decoration: none;
+  color: #2F4F6F;
+}
+.footer-redes div a:hover i {
   color: #FF8000;
 }
-.footer-redes_redes a i {
-  transition: 0.2s;
+.footer-redes div a i {
+  transition: 0.3s;
+}
+
+.footer-copyright {
+  margin: 8px;
+}
+.footer-copyright p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
   color: #2F4F6F;
-  font-size: 32px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -268,6 +327,25 @@ h5 {
 @media screen and (max-width: 768px) {
   .topbar-nav {
     display: none;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-contacto {
+    gap: 3px;
+    font-size: 16px;
+  }
+  .footer-contacto h5 {
+    font-size: 26px;
+  }
+  .footer-redes {
+    gap: 3px;
+  }
+  .footer-redes h5 {
+    font-size: 26px;
+  }
+  .footer-redes div a {
+    font-size: 26px;
   }
 }
 @media screen and (max-width: 480px) {
