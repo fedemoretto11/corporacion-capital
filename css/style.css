@@ -76,19 +76,21 @@
   flex-direction: column;
   gap: 6.5px;
   cursor: pointer;
-  height: 130px;
+  height: 85px;
 }
 #burguer-menu:hover div {
   background-color: #FF8000;
 }
-#burguer-menu div {
+
+.burguer-menu-line {
   width: 40px;
-  height: 3px;
+  height: 4px;
   background-color: #56C7F4;
   transition: 0.7s;
 }
 
 .line1-active {
+  height: 3px;
   transform: rotate(45deg) translate(6.5px, 6.5px);
 }
 
@@ -97,6 +99,7 @@
 }
 
 .line3-active {
+  height: 3px;
   transform: rotate(-45deg) translate(6.5px, -6.5px);
 }
 
