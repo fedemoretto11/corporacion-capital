@@ -29,6 +29,10 @@
   background-color: #2F4F6F;
   justify-content: space-between;
   box-sizing: content-box;
+  position: fixed;
+  box-shadow: 0 0 5px #56C7F4;
+  z-index: 1000;
+  transition: 0.5s;
 }
 
 .topbar-left {
@@ -104,10 +108,11 @@
 }
 
 .sidebar {
+  z-index: -500;
   height: 100%;
   width: 250px;
   background-color: rgba(47, 79, 111, 0.4666666667);
-  position: absolute;
+  position: fixed;
   z-index: 100;
   transition: all ease-in-out 0.5s;
   justify-content: flex-end;
@@ -161,9 +166,19 @@
   color: #FF8000;
 }
 
+.disminuido {
+  height: 45px;
+}
+.disminuido div {
+  border: none;
+}
+.disminuido .topbar-nav {
+  display: none;
+}
+
 .hero {
   width: 100vw;
-  height: calc(100vh - 105px);
+  height: 100vh;
   background-image: url("../img/ciudad.webp");
   background-size: cover;
   background-position: center;
@@ -237,6 +252,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 16px;
+  cursor: default;
 }
 .porque-nosotros_texto h3 {
   font-size: 42px;
