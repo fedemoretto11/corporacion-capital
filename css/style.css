@@ -29,7 +29,7 @@
   background-color: #2F4F6F;
   justify-content: space-between;
   box-sizing: content-box;
-  position: fixed;
+  position: relative;
   box-shadow: 0 0 5px #56C7F4;
   z-index: 1000;
   transition: 0.5s;
@@ -135,13 +135,16 @@
 .sidebar-nav_ul li {
   width: 100%;
   text-align: end;
+}
+.sidebar-nav_ul li a {
+  text-decoration: none;
   color: #FFFFFF;
   font-family: "Raleway", sans-serif;
   font-size: 28px;
   cursor: pointer;
   transition: 0.5s;
 }
-.sidebar-nav_ul li:hover {
+.sidebar-nav_ul li:hover a {
   color: #FF8000;
 }
 
@@ -150,23 +153,24 @@
   flex-direction: column;
   gap: 15px;
 }
-.sidebar-nav_ul-2 a {
-  text-decoration: none;
-}
-.sidebar-nav_ul-2 a li {
+.sidebar-nav_ul-2 li {
   width: 100%;
   text-align: end;
+}
+.sidebar-nav_ul-2 li a {
+  text-decoration: none;
   color: #FFFFFF;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   cursor: pointer;
   transition: 0.5s;
 }
-.sidebar-nav_ul-2 a li:hover {
+.sidebar-nav_ul-2 li:hover a {
   color: #FF8000;
 }
 
 .disminuido {
+  position: fixed;
   height: 45px;
 }
 .disminuido div {
@@ -178,7 +182,7 @@
 
 .hero {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 105px);
   background-image: url("../img/ciudad.webp");
   background-size: cover;
   background-position: center;
@@ -269,9 +273,76 @@
   color: #FF8000;
 }
 
+#form-container {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url(../img/fondo-contacto-con-filtro.webp);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+#form-container h1 {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 32px;
+  text-align: center;
+}
+#form-container form {
+  width: 70%;
+}
+
+.formulario div {
+  flex-direction: column;
+}
+.formulario div input, .formulario div select, .formulario div textarea {
+  margin: 8px;
+  padding: 4px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #2F4F6F;
+  border: 1px solid #56C7F4;
+  color: #56C7F4;
+}
+.formulario div input:focus, .formulario div select:focus, .formulario div textarea:focus {
+  outline: none;
+  border: 1px solid #FF8000;
+  color: #FF8000;
+}
+.formulario div select {
+  text-align: center;
+}
+.formulario div button {
+  margin: 8px;
+  padding: 4px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #2F4F6F;
+  border: 1px solid #56C7F4;
+  color: #56C7F4;
+}
+.formulario div button:hover {
+  background-color: #56C7F4;
+  color: #2F4F6F;
+  border: 2px solid #FF8000;
+}
+
+.formulario-label {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.formulario-label span {
+  color: #ff0000;
+}
+
 footer {
+  z-index: 1000;
   background-color: #2F4F6F;
   box-sizing: content-box;
+  box-shadow: 0 0 15px #56C7F4;
 }
 
 .footer {

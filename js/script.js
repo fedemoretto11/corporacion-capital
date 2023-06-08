@@ -33,8 +33,10 @@ burguerMenu.addEventListener("click", (e) => {
 })
 
 
+// Achicar menu
+
 const lastScrollTop = 0;
-const delta = 50;
+const delta = 0;
 let eventoActivado = false;
 
 window.addEventListener("scroll", function() {
@@ -50,5 +52,4 @@ window.addEventListener("scroll", function() {
     console.log("Header auemntado");
     topbar.classList.remove("disminuido");
   }
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
