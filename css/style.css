@@ -29,7 +29,8 @@
   background-color: #2F4F6F;
   justify-content: space-between;
   box-sizing: content-box;
-  position: relative;
+  position: fixed;
+  top: 0;
   box-shadow: 0 0 5px #56C7F4;
   z-index: 1000;
   transition: 0.5s;
@@ -111,7 +112,8 @@
   z-index: -500;
   height: 100%;
   width: 250px;
-  background-color: rgba(47, 79, 111, 0.4666666667);
+  background-color: rgba(47, 79, 111, 0.7411764706);
+  box-shadow: 0 0 5px #56C7F4;
   position: fixed;
   z-index: 100;
   transition: all ease-in-out 0.5s;
@@ -182,13 +184,14 @@
 
 .hero {
   width: 100vw;
-  height: calc(100vh - 105px);
+  height: calc(100vh - 85px);
   background-image: url("../img/ciudad.webp");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-top: 85px;
 }
 .hero i {
   font-size: 58px;
@@ -277,6 +280,7 @@
   min-height: 100vh;
   width: 100vw;
   position: relative;
+  margin-top: 80px;
   background-image: url(../img/fondo-contacto-con-filtro.webp);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -429,6 +433,11 @@ footer {
     margin: 0;
   }
   .topbar-nav_ul li {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .topbar-nav_ul a li {
     font-size: 12px;
   }
 }
