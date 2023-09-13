@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+
+$colorPimario: #56C7F4;
+$colorSecundario: #80B2CB;
+$colorOscuro: #2F4F6F;
+$colorBlanco: #FFFFFF;
+$colorAcento: #FF8000;
+$colorFondoOscuro: #3476AF;
+$colorFondoClaro: #3F88C8;
+
+$fuente: 'Raleway', sans-serif; 
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $fuente;
+}
+
+.header {
+  background-color: $colorOscuro;
+  &__burgerMenu {
+    &__icon {
+      transition: 300ms;
+      &:hover {
+        color: $colorAcento;
+      }
+    }
+  }
+  &__nav {
+    border-top: 1px solid $colorPimario;
+    background-color: $colorOscuro;
+    transition: 600ms;
+    &__title {
+      color: $colorPimario;
+    }
+    &__link {
+      transition: 300ms;
+      &:hover {
+        color: $colorAcento;
+      }
+    }
+  }
+}
+
+#main {
+  flex: 1;
+}
+
+.footer {
+  background-color: $colorOscuro;
+}
+
+.socialLinks {
+  &__links {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $colorSecundario;
+      border-radius: 50px;
+      color: $colorOscuro;
+      transition: 300ms;
+      &:hover {
+        color: $colorAcento;
+      }
+  }
+}
+
+.hero {
+  background-color: $colorSecundario;
+  &__text {
+    &__title{
+      border-radius: 25px 25px 0 0;
+      background-color: $colorFondoOscuro;
+      & h3 {
+        color: $colorAcento;
+      }
+    }
+    &__description{
+      background-color: $colorFondoClaro;
+    }
+    &__button{
+      border-radius: 0 0 25px 25px;
+      background-color: $colorFondoOscuro;
+      &__btn {
+        border: 1px solid $colorOscuro;
+        border-radius: 25px;
+        background-color:$colorPimario;
+        transition: 300ms;
+        &:hover {
+          border-color: $colorPimario;
+          background-color: $colorOscuro;
+          color: $colorAcento;
+        }
+      }
+    }
+  }
+}
