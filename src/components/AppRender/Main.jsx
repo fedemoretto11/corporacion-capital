@@ -6,9 +6,10 @@ function Main() {
     <main id="main" className="flex">
       <Routes>
         <Route path="/" element={<Index />}></Route>
-        <Route path="/" element=""></Route>
-        <Route path="/" element=""></Route>
-        <Route path="/" element=""></Route>
+        <Route path="/nosotros" element=""></Route>
+        <Route path="/empleos" element=""></Route>
+        <Route path="/comunidad" element=""></Route>
+        <Route path="/empleador" element=""></Route>
         <Route path="*" element="Error 404"></Route>
       </Routes>
     </main>

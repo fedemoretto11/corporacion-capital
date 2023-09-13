@@ -13,10 +13,10 @@ function Header() {
       </div>
       <nav className={`header__nav w-screen absolute ${isVisible ? "top-[64px]" : "-top-[300px]"} md:top-0 h-64 md:h-[64px] flex flex-col md:flex-row justify-start items-center p-4 gap-6 4xl text-white`}>
         <Link to="/" className='header__nav__title text-xl'>Corporacion Capital</Link>
-        <Link to="" className='header__nav__link'>Nosotros</Link>
-        <Link to="" className='header__nav__link'>Empleos</Link>
-        <Link to="" className='header__nav__link'>Comunidad</Link>
-        <Link to="" className='header__nav__link md:hidden'>Soluciones al Empleador</Link>
+        <Link to="/nosotros" className='header__nav__link'>Nosotros</Link>
+        <Link to="/empleos" className='header__nav__link'>Empleos</Link>
+        <Link to="/comunidad" className='header__nav__link'>Comunidad</Link>
+        <Link to="/empleador" className='header__nav__link md:hidden'>Soluciones al Empleador</Link>
         <div className='hidden md:flex md:ml-auto lg:pr-10'>
           <Link to="" className='header__nav__link'>Soluciones al Empleador</Link>
         </div>

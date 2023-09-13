@@ -75,6 +75,10 @@ body {
 
 .hero {
   background-color: $colorSecundario;
+  background-image: url('../assets/ciudad.webp');
+  background-position: center;
+  background-size: cover;
+  min-height: calc(100vh - 64px);
   &__text {
     &__title{
       border-radius: 25px 25px 0 0;
@@ -129,14 +133,15 @@ body {
     }
     &__btn {
       border: 1px solid $colorOscuro;
-        border-radius: 25px;
-        background-color:$colorPimario;
-        transition: 300ms;
-        &:hover {
-          border-color: $colorPimario;
-          background-color: $colorOscuro;
-          color: $colorAcento;
-        }
+      border-radius: 25px;
+      background-color:$colorPimario;
+      transition: 300ms;
+      color: $colorOscuro;
+      &:hover {
+        border-color: $colorPimario;
+        background-color: $colorOscuro;
+        color: $colorAcento;
+      }
     }
   }
 }
