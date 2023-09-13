@@ -6,6 +6,7 @@ $colorSecundario: #80B2CB;
 $colorOscuro: #2F4F6F;
 $colorBlanco: #FFFFFF;
 $colorAcento: #FF8000;
+$colorGris:#CDCDCD;
 $colorFondoOscuro: #3476AF;
 $colorFondoClaro: #3F88C8;
 
@@ -15,11 +16,12 @@ $fuente: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 body {
   font-family: $fuente;
+  overflow-x: hidden;
+
 }
 
 .header {
@@ -98,6 +100,43 @@ body {
           color: $colorAcento;
         }
       }
+    }
+  }
+}
+
+
+.trust {
+  background-color: $colorGris;
+  color: $colorOscuro;
+  &__logos{
+    & i{
+      font-size: 36px;
+
+    }
+  }
+}
+
+.indexCards {
+  background-color: $colorSecundario;
+  &__card {
+    background-color: $colorOscuro;
+    border-radius: 25px;
+    &__title {
+      color: $colorAcento;
+    }
+    &__text {
+      color: $colorGris;
+    }
+    &__btn {
+      border: 1px solid $colorOscuro;
+        border-radius: 25px;
+        background-color:$colorPimario;
+        transition: 300ms;
+        &:hover {
+          border-color: $colorPimario;
+          background-color: $colorOscuro;
+          color: $colorAcento;
+        }
     }
   }
 }

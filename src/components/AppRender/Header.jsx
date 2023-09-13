@@ -17,7 +17,7 @@ function Header() {
         <Link to="" className='header__nav__link'>Empleos</Link>
         <Link to="" className='header__nav__link'>Comunidad</Link>
         <Link to="" className='header__nav__link md:hidden'>Soluciones al Empleador</Link>
-        <div className='hidden md:flex md:ml-auto'>
+        <div className='hidden md:flex md:ml-auto lg:pr-10'>
           <Link to="" className='header__nav__link'>Soluciones al Empleador</Link>
         </div>
       </nav>

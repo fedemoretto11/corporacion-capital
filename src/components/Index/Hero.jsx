@@ -3,7 +3,7 @@ import foto from '../../assets/emilianoSerio.jpg'
 
 function Hero() {
   return (
-    <section className="hero w-screen flex justify-around items-center p-4">
+    <section className="hero w-screen flex justify-around items-center p-8">
       <article className="hero__text w-3/4 md:w-[340px] h-[480px]">
         <div className="hero__text__title w-full h-3/6 flex justify-center items-center">
           <h3 className="text-4xl text-center p-4">Obtén asistencia de reclutamiento al instante</h3>
