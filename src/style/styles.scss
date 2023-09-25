@@ -78,7 +78,7 @@ body {
   background-image: url('../assets/ciudad.webp');
   background-position: center;
   background-size: cover;
-  min-height: calc(100vh - 64px);
+  height: calc(100vh - 64px);
   &__text {
     &__title{
       border-radius: 25px 25px 0 0;
@@ -142,6 +142,88 @@ body {
         background-color: $colorOscuro;
         color: $colorAcento;
       }
+    }
+  }
+}
+
+
+.nosotrosHero {
+  height: calc(100vh - 64px);
+  background-image: url('../assets/reunion-modified.jpg');
+  background-size: cover;
+  background-position: center;
+  &__text {
+    background-color: $colorOscuro;
+    box-shadow: -20px -20px 0 0 $colorPimario;
+  }
+  
+}
+
+.teamContainer {
+  background-color: $colorSecundario;
+}
+
+.member {
+  background-color: $colorOscuro;
+  &__text {
+    color: $colorAcento;
+    &__description {
+      color: $colorBlanco;
+    }
+  }
+}
+
+.empleosContainer {
+  height: calc(100vh - 64px);
+  background-color: $colorGris;
+}
+
+.job {
+  background-color: $colorOscuro;
+  border: 1px solid $colorPimario;
+  transition: 300ms;
+  &:hover {
+    background-color: $colorFondoOscuro;
+  }
+  &__text {
+    &__title {
+      color: $colorAcento;
+    }
+  }
+}
+
+.jobDetail {
+  transition: 600ms;
+  &__resume {
+    background-color: $colorOscuro;
+    border-top: 1px solid $colorPimario;
+    &__text {
+      & h3 {
+        color: $colorAcento;
+      }
+      & h6 {
+        color: $colorSecundario;
+      }
+      &__btn {
+        color: $colorBlanco;
+        transition: 300ms;
+        &:hover {
+          color: $colorAcento;
+        }
+      }
+    }
+  }
+  &__details {
+    background-color: $colorSecundario;
+    & h5 {
+      font-weight: bold;
+      color: $colorOscuro;
+    }
+    & p {
+      color: $colorOscuro;
+    }
+    & ul li {
+      color: $colorOscuro;
     }
   }
 }

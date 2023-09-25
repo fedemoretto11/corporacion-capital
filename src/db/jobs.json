@@ -1,0 +1,27 @@
+{
+  "title": "Puesto de trabajo",
+  "description": "Aca va una descripcion del puesto de trabajo",
+  "isFinished": false,
+  "company": {
+    "name": "Company name",
+    "location":"origen ej Arg",
+    "logo":"enlace logo"
+  },
+  "workLocation": {
+    "isRemote": false,
+    "country": "Argentina",
+    "city": "Buenos Aires",
+    "neighborhood": "Recoleta"
+  },
+  "payment": {
+    "currency": "ARS",
+    "amount": 170000
+  },
+  "requirements": {
+    "skills" : ["react", "java", "spring"],
+    "requireHighSchool" : true,
+    "degree": ["Inter commerce degree"]
+  },
+  "offers": ["osde", "comida", "reloj mensual para no llegar tarde"]
+}
+
