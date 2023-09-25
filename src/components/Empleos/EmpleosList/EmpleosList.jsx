@@ -14,7 +14,7 @@ function EmpleosList({ jobs }) {
     ? <EmpleoListLoader />
     : (
 
-      <section className="flex flex-col h-full">
+      <section className="jobs_list flex flex-col h-full overflow-y-scroll">
       {jobs.map((job) => {
         if (job.isActive) {
           return (

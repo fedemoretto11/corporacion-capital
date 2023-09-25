@@ -21,17 +21,17 @@ function Job({ job }) {
             <article className={`jobDetail w-full md:w-2/4 h-screen absolute lg:relative flex flex-col md:gap-8 top-[64px] ${isVisible ? "left-0" : "left-[800px]"} md:left-auto md:top-auto`}>
 
               <div className="jobDetail__resume w-full h-2/6 md:h-40 flex justify-center items-center">
-                  <figure className="jobDetail__resume__figure w-2/6">
-                    <img src={job.company.logo} alt={job.company.name} />
+                  <figure className="jobDetail__resume__figure w-2/6 h-full">
+                    <img src={job.company.logo} alt={job.company.name} className="h-full object-contain"/>
                   </figure>
                   <div className="jobDetail__resume__text w-4/6 h-full flex flex-col justify-around items-center">
                     <div>
                       <h3 className="text-2xl text-center">{job.title}</h3>
-                      <h6>{`${job.workLocation.city}, ${job.workLocation.province}, ${job.workLocation.country}`}</h6>
+                      <h6>{!job.workLocation.isRemote ? `${job.workLocation.city}, ${job.workLocation.province}, ${job.workLocation.country}` : "Remote" }</h6>
                     </div>
                     <div className="flex gap-4">
                       <button onClick={() => {setIsVisible(false)}} className="lg:hidden">Volver</button>
-                      <Link className="jobDetail__resume__text__btn text-xl">Aplicar</Link>  
+                      <Link to={`aplicar/${job.id}`} className="jobDetail__resume__text__btn text-xl">Aplicar</Link>  
                     </div>
                   </div>
               </div>
