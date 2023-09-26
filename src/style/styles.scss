@@ -229,6 +229,10 @@ body {
   }
   &__details {
     background-color: $colorSecundario;
+    &__title {
+      color: $colorAcento;
+      text-shadow: $colorOscuro 0 0 10px;
+    }
     & h5 {
       font-weight: bold;
       color: $colorOscuro;
@@ -239,5 +243,46 @@ body {
     & ul li {
       color: $colorOscuro;
     }
+  }
+}
+
+.aplicar {
+  background-color: $colorGris;
+}
+
+.form-container {
+  background-color: $colorOscuro;
+  border: 2px solid $colorPimario;
+  &__form {
+    &__inputs {
+      & input {
+        padding: 2px;
+      }
+    }
+    &__inputFile {
+      & input {
+        background-color: $colorBlanco;
+        padding: 1px;
+      }
+    }
+    &__btnSend {
+      & button {
+        background-color: $colorFondoClaro;
+        border-radius: 7px;
+        border: 2px solid $colorPimario;
+        transition: 300ms;
+        &:hover {
+          background-color: $colorOscuro;
+          color: $colorAcento;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  background-color: $colorOscuro;
+  & h3 {
+    color: $colorAcento;
   }
 }

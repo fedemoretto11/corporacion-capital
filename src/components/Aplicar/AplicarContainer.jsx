@@ -34,7 +34,7 @@ function AplicarContainer() {
   return (
     <>
       <Aplicar
-        jobId={jobId}
+        job={job}
       />
     </>
   )
