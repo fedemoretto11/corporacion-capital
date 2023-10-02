@@ -12,7 +12,7 @@ function Main() {
   return (
     <main id="main" className="flex">
       <Routes>
-        {/* <Route path="/" element={<Index />}></Route> */}
+        <Route path="/" element={<Index />}></Route>
         {/* <Route path="/nosotros" element={<Nosotros />}></Route> */}
         <Route path="/empleos" element={<EmpleosPage />}></Route>
         <Route path="/empleos/aplicar/:id" element={<AplicarContainer />}></Route>
