@@ -12,14 +12,11 @@ function AplicarForm({ job }) {
   const remuneracion = useRef();
   const cv = useRef();
 
-  console.log(nombre)
-
-
 
   return (
     <div className="form-container w-full">
       <h5 className="text-center md:text-start text-white text-lg md:text-xl mx-8 px-8 pt-4">Completa los datos</h5>
-      <form className="form-container__form flex flex-col gap-2 p-8 m-8 mt-0" action="https://formsubmit.co/fedecuervosl@gmail.com" method="POST" enctype="multipart/form-data">
+      <form className="form-container__form flex flex-col gap-2 p-8 mx-8" action="https://formsubmit.co/fedecuervosl@gmail.com" method="POST" enctype="multipart/form-data">
         <div className="form-container__form__inputs grid grid-cols-1 md:grid-cols-2 gap-4">
           <input 
             type="text" 
@@ -79,13 +76,13 @@ function AplicarForm({ job }) {
             ref={cv}
           />
         </div>
-        <div className="form-container__form__btnSend flex flex-col md:flex-row gap-4 justify-between items-center">
+        <div className="form-container__form__btnSend flex flex-col md:flex-row gap-4 mt-4 justify-between items-center">
           <button type="submit" className="px-4 py-2 w-36 text-white">Enviar</button>
         </div>
         <input 
           type="hidden" 
           name="_subject" 
-          value={`${job.title}`} 
+          value={`${job.title} || ${job.company.name}`} 
         />
         <input 
           type="hidden" 
