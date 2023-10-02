@@ -4,31 +4,22 @@ import { db } from "./data";
 function Jobs() {
 
   let trabajo = {
-    title: "Veterinario",
-    description: "Se requiere experto veterinario para llevar el control de los animales de campo",
+    title: "Sofware Developer",
+    description: "Se requiere experto software developer para realizar una app de escritorio desde 0, se requiere extenso conocimineto en Java",
     isActive: true,
+    isRemote: true,
+    workLocation: "Maipu, Buenos Aires, Argentina",
+    currency: "USD",
+    paymentAmount: 11000,
+    skills : ["Java", "SpringBoot", "MySQL", "JPA"],
+    degree: [],
     company: {
-      name: "Pichiman II",
+      name: "Le Softaré",
       location:"Argentina",
       logo:"https://www.zarla.com/images/zarla-da-dcampo-1x1-2400x2400-20220131-bykydp8m7g3ddg6t7tbr.png?crop=1:1,smart&width=250&dpr=2"
-    },
-  workLocation: {
-      isRemote: false,
-      country: "Argentina",
-      province: "Buenos Aires",
-      city: "Maipu"
-    },
-    payment: {
-      currency: "ARS",
-      amount: 112000
-    },              
-    requirements: {
-      skills : ["Veteriania", "quimica con los animales", "Ganas de laburar vagos"],
-      requireHighSchool : true,
-      degree: ["Veterinario"]
-    },
+    },            
     offers: ["osde", "comida", "reloj mensual para no llegar tarde"]
-  }         
+  }        
 
   const agregarDB = () => {
     const docAdded = addDoc(collection(db,"jobs"), trabajo);

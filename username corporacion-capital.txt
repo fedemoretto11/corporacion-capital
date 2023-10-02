@@ -1,0 +1,8 @@
+username: corporacionCapital
+password:  bRceVu6DUcmU66Z9
+
+
+ip address:: 179.40.112.14/32
+name: My IP Address
+
+url: mongodb+srv://corporacionCapital:bRceVu6DUcmU66Z9@corporacioncapital.qrqe31r.mongodb.net/
