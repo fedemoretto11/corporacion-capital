@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Veterinario",
+    "description": "Se requiere experto veterinario para llevar el control de los animales de campo",
+    "isActive": true,
+    "isRemote": false,
+    "workLocation": "Maipu, Buenos Aires, Argentina",
+    "currency": "ARS",
+    "paymentAmount": 112000,
+    "skills" : ["Veteriania", "quimica con los animales", "Ganas de laburar vagos"],
+    "degree": ["Veterinario"],
+    "company": {
+      "name": "Pichiman II",
+      "location":"Argentina",
+      "logo":"https://www.zarla.com/images/zarla-da-dcampo-1x1-2400x2400-20220131-bykydp8m7g3ddg6t7tbr.png?crop=1:1,smart&width=250&dpr=2"
+    },            
+    "offers": ["osde", "comida", "reloj mensual para no llegar tarde"]
+  }   
+]

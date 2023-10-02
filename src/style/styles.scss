@@ -286,3 +286,11 @@ body {
     color: $colorAcento;
   }
 }
+
+
+.error {
+  background-color: $colorGris;
+  & h2 {
+    color: $colorOscuro;
+  }
+}
