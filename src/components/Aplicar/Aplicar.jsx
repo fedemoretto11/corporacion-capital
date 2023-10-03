@@ -12,7 +12,7 @@ function Aplicar({ job }) {
       ? <h4>Cargando</h4>
       : (
         <section className="aplicar flex flex-col w-full h-full p-8 gap-8">
-          <div className="jobDetail__details flex flex-col w-full justify-start h-4/6 md:h-[300px] p-4">
+          <div className="jobDetail__details flex flex-col w-full justify-start h-4/6 md:min-h-[300px] p-4">
             <h3 className="jobDetail__details__title text-xl">{job.title}</h3>
             <h5>Acerca</h5>
             <p>{job.description}</p>

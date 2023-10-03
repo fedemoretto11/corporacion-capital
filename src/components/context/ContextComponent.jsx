@@ -13,23 +13,21 @@ function ContextComponent(props) {
     setJobID(id)
   }
 
-  // const guardarSolicitud = (nombre, apellido, email, telefono, linkedin, cvOnline, remuneracion) => {
-  //   const solicitudCollection = collection(db,"solicitudes");
-  //   const solicitud = {
-  //     nombre: nombre,
-  //     apeliido: apellido,
-  //     email: email,
-  //     telefono: telefono,
-  //     linkedin: linkedin,
-  //     cvOnline: cvOnline,
-  //     remuneracion: remuneracion
-  //   }
-  // }
+  const guardarSolicitud = (datosSolicitante, job) => {
+    // const solicitudCollection = collection(db,"solicitudes");
+    const solicitud = {
+      datosSolicitante, 
+      job
+    }
+  }
 
   const contextObject = {
     jobId: jobId,
     onSetJobID: (id) => {
       onSetJobID(id)
+    },
+    onGuardarSolicitud: (datosSolicitante, job) => {
+      guardarSolicitud(datosSolicitante, job)
     }
   }
 
