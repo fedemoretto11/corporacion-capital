@@ -23,35 +23,35 @@ function Header() {
         >
           Corporacion Capital
         </Link>
-        <Link 
+        {/* <Link 
           to="/nosotros" 
           className='text-project-50 duration-300 hover:text-acento'
         >
           Nosotros
-        </Link>
+        </Link> */}
         <Link 
           to="/empleos" 
           className='text-project-50 duration-300 hover:text-acento'
         >
           Empleos
         </Link>
-        <Link 
+        {/* <Link 
           to="/comunidad" 
           className='text-project-50 duration-300 hover:text-acento'
         >
           Comunidad
-        </Link>
+        </Link> */}
         <Link 
           to="/empleador" 
           className='text-project-50 duration-300 hover:text-acento md:hidden'>Soluciones al Empleador</Link>
-        <div className='hidden md:flex md:ml-auto lg:pr-10'>
+        {/* <div className='hidden md:flex md:ml-auto lg:pr-10'>
           <Link 
             to="" 
             className='text-project-50 duration-300 hover:text-acento'
           >
             Soluciones al Empleador
           </Link>
-        </div>
+        </div> */}
       </nav>
     </header>
   )
