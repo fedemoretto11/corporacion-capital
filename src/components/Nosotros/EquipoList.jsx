@@ -10,7 +10,7 @@ function EquipoList( { team } ) {
       ? <h4>Cargando</h4> 
       :
       (
-        <section className="teamContainer grid grid-cols-1 xl:grid-cols-2 gap-8 p-16">
+        <section className="bg-project-300 grid grid-cols-1 xl:grid-cols-2 gap-8 p-16">
           {team.map((member) => {
             return (
               <EquipoMember 

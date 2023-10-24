@@ -24,126 +24,46 @@ body {
 
 }
 
-.header {
-  background-color: $colorOscuro;
-  &__burgerMenu {
-    &__icon {
-      transition: 300ms;
-      &:hover {
-        color: $colorAcento;
-      }
-    }
-  }
-  &__nav {
-    border-top: 1px solid $colorPimario;
-    background-color: $colorOscuro;
-    transition: 600ms;
-    &__title {
-      color: $colorPimario;
-    }
-    &__link {
-      transition: 300ms;
-      &:hover {
-        color: $colorAcento;
-      }
-    }
-  }
-}
 
 #main {
   flex: 1;
 }
 
-.footer {
-  background-color: $colorOscuro;
-}
 
 .socialLinks {
   &__links {
     display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $colorSecundario;
-      border-radius: 50px;
-      color: $colorOscuro;
-      transition: 300ms;
-      &:hover {
-        color: $colorAcento;
-      }
+    justify-content: center;
+    align-items: center;
+    background-color: $colorSecundario;
+    border-radius: 50px;
+    color: $colorOscuro;
+    transition: 300ms;
+    &:hover {
+      color: $colorAcento;
+    }
   }
 }
 
+.button-default {
+  background-color: #14a8e3;
+  color: #f0f9ff;
+  border: solid 1px #086b9c;
+  border-radius: 12px;
+  transition: 300ms;
+  &:hover {
+    background-color: #0886c1;
+    color: #FF8000;
+    border: solid 1px #14a8e3;
+  }
+
+}
+
 .hero {
-  background-color: $colorSecundario;
   background-image: url('../assets/ciudad.webp');
   background-position: center;
   background-size: cover;
   height: calc(100vh - 64px);
-  &__text {
-    &__title{
-      border-radius: 25px 25px 0 0;
-      background-color: $colorFondoOscuro;
-      & h3 {
-        color: $colorAcento;
-      }
-    }
-    &__description{
-      background-color: $colorFondoClaro;
-    }
-    &__button{
-      border-radius: 0 0 25px 25px;
-      background-color: $colorFondoOscuro;
-      &__btn {
-        border: 1px solid $colorOscuro;
-        border-radius: 25px;
-        background-color:$colorPimario;
-        transition: 300ms;
-        &:hover {
-          border-color: $colorPimario;
-          background-color: $colorOscuro;
-          color: $colorAcento;
-        }
-      }
-    }
-  }
-}
-
-
-.trust {
-  background-color: $colorGris;
-  color: $colorOscuro;
-  &__logos{
-    & i{
-      font-size: 36px;
-
-    }
-  }
-}
-
-.indexCards {
-  background-color: $colorSecundario;
-  &__card {
-    background-color: $colorOscuro;
-    border-radius: 25px;
-    &__title {
-      color: $colorAcento;
-    }
-    &__text {
-      color: $colorGris;
-    }
-    &__btn {
-      border: 1px solid $colorOscuro;
-      border-radius: 25px;
-      background-color:$colorPimario;
-      transition: 300ms;
-      color: $colorOscuro;
-      &:hover {
-        border-color: $colorPimario;
-        background-color: $colorOscuro;
-        color: $colorAcento;
-      }
-    }
-  }
 }
 
 
@@ -153,29 +73,13 @@ body {
   background-size: cover;
   background-position: center;
   &__text {
-    background-color: $colorOscuro;
-    box-shadow: -20px -20px 0 0 $colorPimario;
+    box-shadow: -20px -20px 0 0 #81d5f8;
   }
   
 }
 
-.teamContainer {
-  background-color: $colorSecundario;
-}
-
-.member {
-  background-color: $colorOscuro;
-  &__text {
-    color: $colorAcento;
-    &__description {
-      color: $colorBlanco;
-    }
-  }
-}
-
 .empleosContainer {
   height: calc(100vh - 64px);
-  background-color: $colorGris;
 }
 
 .jobs_list {
@@ -189,69 +93,10 @@ body {
   &::-webkit-scrollbar-thumb {
     background-color: $colorOscuro;
     border-radius: 6px;
-}
-}
-
-.job {
-  background-color: $colorOscuro;
-  border: 1px solid $colorPimario;
-  transition: 300ms;
-  &:hover {
-    background-color: $colorFondoOscuro;
-  }
-  &__text {
-    &__title {
-      color: $colorAcento;
-    }
-  }
-}
-
-.jobDetail {
-  transition: 600ms;
-  &__resume {
-    background-color: $colorOscuro;
-    border-top: 1px solid $colorPimario;
-    &__text {
-      & h3 {
-        color: $colorAcento;
-      }
-      & h6 {
-        color: $colorSecundario;
-      }
-      &__btn {
-        color: $colorBlanco;
-        transition: 300ms;
-        &:hover {
-          color: $colorAcento;
-        }
-      }
-    }
-  }
-  &__details {
-    background-color: $colorSecundario;
-    &__title {
-      color: $colorAcento;
-      text-shadow: $colorOscuro 0 0 10px;
-    }
-    & h5 {
-      font-weight: bold;
-      color: $colorOscuro;
-    }
-    & p {
-      color: $colorOscuro;
-    }
-    & ul li {
-      color: $colorOscuro;
-    }
-  }
-}
-
-.aplicar {
-  background-color: $colorGris;
+  } 
 }
 
 .form-container {
-  background-color: $colorOscuro;
   border: 2px solid $colorPimario;
   &__form {
     &__inputs {
@@ -265,25 +110,6 @@ body {
         padding: 1px;
       }
     }
-    &__btnSend {
-      & button {
-        background-color: $colorFondoClaro;
-        border-radius: 7px;
-        border: 2px solid $colorPimario;
-        transition: 300ms;
-        &:hover {
-          background-color: $colorOscuro;
-          color: $colorAcento;
-        }
-      }
-    }
-  }
-}
-
-.form {
-  background-color: $colorOscuro;
-  & h3 {
-    color: $colorAcento;
   }
 }
 

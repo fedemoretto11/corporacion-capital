@@ -6,7 +6,9 @@ function EmpleosPage() {
 
 
   return (
-    <section className="empleosContainer flex flex-col lg:flex-row p-8 justify-center items-start gap-8 w-screen">
+    <section 
+      className="empleosContainer bg-project-100 flex flex-col lg:flex-row p-8 justify-center items-start gap-8 w-screen"
+    >
       <EmpleosListContainer />
       <JobContainer />
     </section>

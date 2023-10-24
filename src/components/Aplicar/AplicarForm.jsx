@@ -38,8 +38,8 @@ function AplicarForm({ job }) {
 
 
   return (
-    <div className="form-container w-full">
-      <h5 className="text-center md:text-start text-white text-lg md:text-xl mx-0 md:mx-8 px-8 pt-4">Completa los datos</h5>
+    <div className="form-container bg-project-900 w-full">
+      <h5 className="text-center md:text-start text-project-50 text-lg md:text-xl mx-0 md:mx-8 px-8 pt-4">Completa los datos</h5>
       <form className="form-container__form flex flex-col gap-2 p-4 md:p-8 mx-0 md:mx-8" action="https://formsubmit.co/fedecuervosl@gmail.com" method="POST" encType="multipart/form-data">
         <div className="form-container__form__inputs grid grid-cols-1 md:grid-cols-2 gap-4">
           <input 
@@ -97,7 +97,7 @@ function AplicarForm({ job }) {
           />
         </div>
         <div className="form-container__form__inputFile">
-          <h6 className="text-white">CV</h6>
+          <h6 className="text-project-50">CV</h6>
           <input 
             type="file" 
             name="cv" 
@@ -108,8 +108,13 @@ function AplicarForm({ job }) {
             onChange={() => {handleInputChange(cv)}}
           />
         </div>
-        <div className="form-container__form__btnSend flex flex-col md:flex-row gap-4 mt-4 justify-between items-center">
-          <button type="submit" className="px-4 py-2 w-36 text-white">Enviar</button>
+        <div className="flex flex-col md:flex-row gap-4 mt-4 justify-between items-center">
+          <button 
+            type="submit" 
+            className=" px-4 py-2 w-36 text-project-50 bg-project-500 border-2 border-project-300 rounded-lg duration-300 hover:bg-project-600 hover:text-acento"
+          >
+            Enviar
+          </button>
         </div>
         <input 
           type="hidden" 
