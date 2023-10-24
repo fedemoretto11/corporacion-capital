@@ -11,26 +11,67 @@ function Aplicar({ job }) {
     !job
       ? <h4>Cargando</h4>
       : (
-        <section className="aplicar flex flex-col w-full h-full p-8 gap-8">
-          <div className="jobDetail__details flex flex-col w-full justify-start h-4/6 md:h-[300px] p-4">
-            <h3 className="jobDetail__details__title text-xl">{job.title}</h3>
-            <h5>Acerca</h5>
-            <p>{job.description}</p>
-            <h5>Requisitos</h5>
+        <section 
+          className="bg-project-50 flex flex-col w-full h-full p-8 gap-8"
+        >
+          <div 
+            className="bg-project-200 flex flex-col w-full justify-start h-4/6 md:min-h-[300px] p-4"
+          >
+            <h3 
+              className="text-acento text-2xl drop-shadow-md"
+            >
+              {job.title}
+            </h3>
+            <h5
+              className="text-project-800 font-bold"
+            >
+              Acerca
+            </h5>
+            <p
+              className="text-project-800"
+            >{job.description}</p>
+            <h5
+              className="text-project-800 font-bold"
+            >
+              Requisitos
+            </h5>
             <ul>
               {job?.skills.map((skill) =>{
                 return (
-                <li key={skill}>{skill}</li>
+                <li
+                  className="text-project-800" 
+                  key={skill}>{skill}
+                </li>
                 )})
               }
             </ul>
-            <h5>Lugar de trabajo</h5>
-            <p>{job.isRemote ? "Trabajo remoto" : `${job.workLocation}`}</p>
-            <h5>Remuneracion</h5>
-            <p>{job.paymentAmount.toLocaleString("es-AR",{style:"currency", currency:`${job.currency}`})}</p>
+            <h5
+              className="text-project-800 font-bold"
+            >
+              Lugar de trabajo
+            </h5>
+            <p
+              className="text-project-800"
+            >
+              {job.isRemote ? "Trabajo remoto" : `${job.workLocation}`}
+            </p>
+            <h5
+              className="text-project-800 font-bold"
+            >
+              Remuneracion
+            </h5>
+            <p
+              className="text-project-800"
+            >
+              {job.paymentAmount.toLocaleString("es-AR",{style:"currency", currency:`${job.currency}`})}
+            </p>
           </div>
-          <div className="form p-8">
-            <h3 className="text-2xl mb-4">Postularse al puesto</h3>
+
+
+
+
+          <div className="bg-project-900 p-8">
+            <h3 className="text-2xl text-acento mb-4">Postularse al puesto</h3>
             <AplicarForm 
               job={job}
             />
