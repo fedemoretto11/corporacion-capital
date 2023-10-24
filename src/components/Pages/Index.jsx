@@ -6,8 +6,8 @@ function Index() {
   return (
     <section className="flex flex-col">
       <Hero />
-      <TrustSection />
-      <IndexCards />
+      {/* <TrustSection /> */}
+      {/* <IndexCards /> */}
     </section>
   )
 }
